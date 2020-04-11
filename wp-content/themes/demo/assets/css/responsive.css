@@ -1,0 +1,365 @@
+
+@media (max-width: 1340px) {
+	
+ 
+}
+
+
+/* Medium Devices, Desktops */
+@media (max-width: 1024px) {
+    .container{
+        max-width: 100%;
+    }
+   
+    .container.headerbox {
+       max-width: 100%;
+   } 
+   .logo-here img {
+    width: 100%;
+    padding-top: 16px;
+    }
+
+    .quickCall {
+        margin-left: 0 !IMPORTANT;
+    }
+
+    ul#menu li a {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    ul#menu {}
+
+    ul#menu {
+        padding-left: 24px;
+    }
+
+    .minister button {
+        width: 100%;
+        font-size: 12px;
+    }
+    ul#menu-copyright li a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+    .clientTestimonail {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .footerLogo div {
+        width: 40%;
+        float: left;
+    }
+    
+    .footerLogo div img {
+        width: 100%;
+    }
+
+    .singleQuickLink {
+        display: inline-block;
+        padding: 20px 20px;
+        border-right: 1px solid #dcdcdc;
+        height: 100%;
+        width: 100%;
+    }
+
+  .logodive {
+        width: 120px;
+        margin: 0 auto;
+    }
+    
+   .phonedive {
+        width: 100px;
+        position: absolute;
+        left: 0;
+    }
+    
+    .phonedive p {
+        display: none;
+    }
+    
+   .phonedive .quickCall {
+       background: transparent;
+    }
+    section#headerArea {
+        background: #f0f0f0;
+    }
+    .rightSide {
+        display: none;
+    }
+    .rightSide {
+        float: right;
+    }
+
+    .wpb_single_image.wpb_content_element.vc_align_left.fullwidth {
+        display: none;
+    }
+    
+     
+    .testimonialsbox.wpb_column.vc_column_container.vc_col-sm-6.vc_col-has-fill {
+        width: 100%;
+    }
+    ul#menu {
+        display: none !important;
+    }
+
+    .vc_custom_1585739417331 {
+        background-color: #000000 !important;
+        height: 100%;
+        position: relative;
+        left: 0;
+        padding: 10px;
+    }
+    ul#menu-copyright li a {
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        margin-right: 5px;
+
+    }
+
+    .copy-p p {
+        font-size: 12px; 
+    }
+    div#fullHeight {
+        margin-bottom: 30px !IMPORTANT;
+    }
+    .thumbBox {
+        height: 100%;
+    }
+
+
+    div#fullHeight {
+        margin-bottom: 30px !IMPORTANT;
+    }
+    .thumbBox {
+        height: 100%;
+    }
+
+    .thumb_details {
+        padding: 15px;
+    }
+    .customeTitle .call_us_number {
+        margin-left: 0;
+    }
+    .customeFooter .quickCall {
+        width: 190px;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+    .customFooterLogo {
+        margin-top: 30px;
+    }
+
+    .landing-banner-box {
+        padding: 0;
+    }
+
+    div#fullHeight {
+        color: #fff;
+        padding-left: 15px;
+    }
+
+    #landingpage button#responsive-menu-button {
+        display: none;
+    }
+    .landing-banner-box h2 { 
+        width:100%;
+    }
+    .vc_tta-panel-heading a { 
+        width: 100%;
+    }
+
+    .padleft {
+        padding-left: 25px !important;
+    }
+
+}
+
+
+/* Small Devices Potrait */
+@media (max-width : 767px){ 
+
+    .padleft {
+        padding-left: 25px !important;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .container.headerbox {
+        max-width: 100%;
+    } 
+
+    .logodive {
+        width: 120px;
+        margin: 0 auto;
+    }
+    
+   .phonedive {
+        width: 100px;
+        position: absolute;
+        left: 0;
+    }
+    
+    .phonedive p {
+        display: none;
+    }
+    
+   .phonedive .quickCall {
+       background: transparent;
+    }
+    section#headerArea {
+        background: #f0f0f0;
+    }
+
+    section#footer-area {
+        background: #1d1f28;
+        padding: 50px 0;
+    }
+
+    .widgetMenu {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .displaynone {
+        display: none;
+    }
+    .displayblock {
+        display: block !important;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .copy-p p {
+        font-size: 16px !important;
+        color: #fff;
+        font-weight: 500;
+        line-height: 50px;
+    }
+    ul#menu-copyright li {
+       display: block;
+    }
+    ul#menu-copyright li a {
+        font-size: 16px;
+    }
+    .row.borderTop {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .quick-icon {
+        text-align: center;
+    }
+
+    div#sectionBorder:before{
+        content: unset;
+    }
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 45px;
+    }
+    a.vc_general.vc_btn3{
+        width: 100% !important;
+    }
+    
+    a.vc_general.vc_btn3 {
+        width: 100% !important;
+     }
+    .testimonials {
+        overflow: hidden;
+        height: 100%;
+    }
+    .testimonials a.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-modern.vc_btn3-color-grey {
+      
+        margin-top: 0;
+        
+    }
+
+    .vc_btn3-container.vc_btn3-inline {
+        width: 100%;
+    }
+
+
+    .singleQuickLink {
+        display: inline-block;
+        padding: 20px 20px;
+        border-right: 0px solid #dcdcdc;
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .quickCall i {
+        float: left;
+        font-size: 25px;
+        line-height: 40px;
+        transform: rotate(135deg);
+    }
+    div#fullHeight {
+        margin-bottom: 30px !IMPORTANT;
+    }
+    .thumbBox {
+        height: 100%;
+    }
+
+    .thumb_details {
+        padding: 15px;
+    }
+    .customeTitle .call_us_number {
+        margin-left: 0;
+    }
+    .customeFooter .quickCall {
+        width: 190px;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+    .customFooterLogo {
+        margin-top: 30px;
+    }
+
+    .landing-banner-box {
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    div#fullHeight {
+        color: #fff;
+        padding-left: 15px;
+    }
+
+    #landingpage button#responsive-menu-button {
+        display: none;
+    }
+
+    .landing-banner-box h2 { 
+        width:100%;
+    }
+
+    .vc_tta-panel-heading a { 
+        width: 100%;
+    }
+
+} 
+
+
+
+
+/* Extra Small Devices, Phones */ 
+@media (max-width : 479px) {
+ 
+    .container{
+        max-width: 100%;
+    }
+   
+    .container.headerbox {
+       max-width: 100%;
+   } 
+
+}
+
+ 
