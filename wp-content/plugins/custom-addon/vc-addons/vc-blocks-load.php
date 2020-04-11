@@ -25,6 +25,7 @@ class StockVCExtendAddonClass {
         include Stock_ACC_PATH . 'vc-addons/vc-carousel.php'; 
         include Stock_ACC_PATH . 'vc-addons/vc-full-slides.php'; 
         include Stock_ACC_PATH . 'vc-addons/vc-service-box.php'; 
+        include Stock_ACC_PATH . 'vc-addons/repeat-addons.php'; 
       
   
 

@@ -57,6 +57,7 @@ require_once( Stock_ACC_PATH . 'theme-shortcodes/carousel.php' );
 require_once( Stock_ACC_PATH . 'theme-shortcodes/full-slides-shortcode.php' ); 
 require_once( Stock_ACC_PATH . 'theme-shortcodes/service-wp.php' ); 
  
+ 
 
 
 // Shortcodes depended on Visual Composer
