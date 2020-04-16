@@ -220,8 +220,11 @@ class quick_box extends \Elementor\Widget_Base {
 	 */
 	protected function render() {
 
-		$settings = $this->get_settings_for_display();
+        $settings = $this->get_settings_for_display();
+        
         ?>
+
+        
         	<!-- ===== Blog Part HTML Start ===== -->
 		<div class="ic-text-editor">
             <h2 class="ic-editor-title"><?php echo $settings['title']; ?></h2>

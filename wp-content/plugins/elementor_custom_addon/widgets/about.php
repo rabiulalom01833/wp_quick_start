@@ -165,9 +165,7 @@ class Quick_About extends Widget_Base {
 				'placeholder' => __( 'https://your-link.com', 'ic-elements' ),
 				'show_external' => true,
 				'default' => [
-					'url' => '',
-					'is_external' => true,
-					'nofollow' => true,
+					'url' => '', 
 				],
 			]
 		);
@@ -285,7 +283,10 @@ class Quick_About extends Widget_Base {
 	 * @access protected
 	 */
 	protected function render() {
-		$settings = $this->get_settings_for_display(); ?>
+        $settings = $this->get_settings_for_display(); 
+        
+ 
+        ?>
 		 
         <div class="domo-box domo-box-bottom box-shadow">
             <div class="demo-box-1">
@@ -302,7 +303,7 @@ class Quick_About extends Widget_Base {
  
                         echo '<div class="team-member-soical-1">';
                             foreach (  $settings['social_box_url'] as $key=>$item ) : 
-                              echo '<a href="'. $item['icon_link'] . '"><i class="'. $item['icon'] . '"></i></a>'; 
+                              echo '<a href="'.$settings['icon_link']['url'].'"><i class="'. $item['icon'] . '"></i></a>'; 
                             endforeach;
                         echo '</div>';
                     
