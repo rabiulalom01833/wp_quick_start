@@ -2,8 +2,18 @@
 
 namespace Elementor_Custom_Addon\Widgets;
 
+
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
+use Elementor\Utils;
+use Elementor\Control_Media;
+use Elementor\Scheme_Color;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Css_Filter;
+use Elementor\Group_Control_Text_Shadow;
+use Elementor\Group_Control_Background;
  
 /**
  * Elementor oEmbed Widget.
@@ -108,6 +118,93 @@ class quick_box extends \Elementor\Widget_Base {
 			]
 		);
 
+        $this->add_control(
+			'text_align',
+			[
+				'label' => __( 'Alignment', 'ic-elements' ),
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => __( 'Left', 'ic-elements' ),
+						'icon' => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => __( 'Center', 'ic-elements' ),
+						'icon' => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => __( 'Right', 'ic-elements' ),
+						'icon' => 'fa fa-align-right',
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .ic-text-editor' => 'text-align: {{VALUE}};',
+				],
+				'default' => 'left',
+				'toggle' => true,
+			]
+		);
+
+
+        $this->end_controls_section();
+        
+        // STYLE SECTION - TITLE
+		$this->start_controls_section(
+			'title_style',
+			[
+				'label' => __( 'Title', 'ic-elements' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'title_color',
+			[
+				'label' => __( 'Text Color', 'ic-elements' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} h2.ic-editor-title' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'title_typography',
+				'selector' => '{{WRAPPER}} h2.ic-editor-title',
+				'scheme' => Scheme_Typography::TYPOGRAPHY_1
+			]
+		);
+
+		
+		$this->end_controls_section();
+
+        // STYLE SECTION - DESCRIPTION
+		$this->start_controls_section(
+			'description_style',
+			[
+				'label' 		=> __( 'Description', 'ic-elements' ),
+				'tab' 			=> Controls_Manager::TAB_STYLE
+			]
+		);
+		$this->add_control(
+			'description_color',
+			[
+				'label' => __( 'Text Color', 'ic-elements' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} p' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'description_typography',
+				'selector' => '{{WRAPPER}} p',
+				'scheme' => Scheme_Typography::TYPOGRAPHY_1
+			]
+		);
 
 		$this->end_controls_section();
 
@@ -124,14 +221,14 @@ class quick_box extends \Elementor\Widget_Base {
 	protected function render() {
 
 		$settings = $this->get_settings_for_display();
-
-		$html = wp_oembed_get( $settings['url'] );
-
-		echo '<div class="oembed-elementor-widget">';
-
-		echo ( $html ) ? $html : $settings['url'];
-
-		echo '</div>';
+        ?>
+        	<!-- ===== Blog Part HTML Start ===== -->
+		<div class="ic-text-editor">
+            <h2 class="ic-editor-title"><?php echo $settings['title']; ?></h2>
+            <?php echo $settings['description']; ?>
+        </div>
+		<!-- ===== Blog Part HTML End ===== -->
+        <?php
 
 	}
 
