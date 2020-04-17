@@ -152,6 +152,11 @@ class Full_Slider extends Widget_Base {
 						'image' => __( 'Slider Image', 'ic-elements' ),
 						'title' => __( 'Add Slider', 'ic-elements' ),
 						'subtitle' => __( 'Slider Sub Title', 'ic-elements' ),
+                    ],
+                    [
+						'image' => __( 'Slider Image', 'ic-elements' ),
+						'title' => __( 'Add Slider', 'ic-elements' ),
+						'subtitle' => __( 'Slider Sub Title', 'ic-elements' ),
 					],
 					 
 				],
@@ -180,11 +185,12 @@ class Full_Slider extends Widget_Base {
  
         ?>
 
-      <?php if ( $settings['slider_repeat'] ) :  
-		 echo '<div id="main_slider" class="owl-carousel owl-theme full-slides-shortcode">';
-            foreach (  $settings['slider_repeat'] as $key=>$item ) : 
-                echo '<div class="item item-img-1" style="background:url();"';
-
+       <?php if ( $settings['slider_repeat'] ) :  
+           echo ' <div id="main_slider" class="owl-carousel owl-theme full-slides-shortcode">';
+           
+             foreach (  $settings['slider_repeat'] as $key=>$item ) : 
+            echo '<div class="item" style="background:url('.$item['image']['url'].');background-repeat:no-repeat;">'; 
+           
                     echo '<div class="slider_table">';
                         echo ' <div class="slider_table_Cell lefts">';
                             echo ' <div class="container">';
@@ -193,16 +199,18 @@ class Full_Slider extends Widget_Base {
                                         echo ' <h2>'. $item['title'] . '</h2>';
                                         echo ' <p>'. $item['subtitle'] . '</p>';
                                         echo ' <a href="https://www.akij.net/our-companies/"><button class="btn-read">Our Companies</button></a>';
-                                        echo ' </div>';
                                     echo ' </div>';
-                                echo '  </div>';
-                            echo '</div>';
-                        echo '</div>';
-                    echo ' </div>';
-            endforeach;
-                echo '</div>';	 
-         endif; ?>
+                                echo ' </div>';
+                            echo '  </div>';
+                     echo '</div>';
+                echo '</div>';
+          
+            echo ' </div>';
+           endforeach;     
+           
 
+           echo ' </div>';
+        endif; ?>    
         <?php
 		
 	}

@@ -2,19 +2,35 @@
     'use strict'
 
    	  
-	  
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("headerArea");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-    }
 	 
+     
+    $(".full-slides-shortcode").owlCarousel({
+        loop:true, 	 
+        autoplay:true,
+        items:1, 
+        nav:true, 
+        dots:true, 		
+        navText:["<i class=\'fas fa-angle-left\'></i>","<i class=\'fas fa-angle-right\'></i>"], 
+        responsive:{
+            0:{
+             
+                dots:true
+            },
+            600:{
+             
+                dots:true
+            },
+             
+            
+        }
+   });
+  
+
+
+
+
+
+
+
 	 
 })(jQuery);
