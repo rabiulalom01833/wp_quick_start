@@ -52,6 +52,7 @@ class Plugin {
 		// All Operational Widges
 		require_once( __DIR__ . '/widgets/quick_box.php' );
 		require_once( __DIR__ . '/widgets/about.php' );
+		require_once( __DIR__ . '/widgets/slider.php' );
     }
 
 	/**
@@ -69,6 +70,7 @@ class Plugin {
 		// Register Widgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\quick_box() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Quick_About() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Full_Slider() );
 	 
 	}
 
