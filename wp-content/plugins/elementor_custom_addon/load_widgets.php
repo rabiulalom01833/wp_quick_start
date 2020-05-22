@@ -50,9 +50,12 @@ class Plugin {
 		//require_once( __DIR__ . '/widgets/inline-editing.php' );
 
 		// All Operational Widges
-		require_once( __DIR__ . '/widgets/quick_box.php' );
-		require_once( __DIR__ . '/widgets/about.php' );
 		require_once( __DIR__ . '/widgets/slider.php' );
+		require_once( __DIR__ . '/widgets/simple_sales_title.php' );
+		require_once( __DIR__ . '/widgets/event.php' );
+		require_once( __DIR__ . '/widgets/counter.php' );
+		require_once( __DIR__ . '/widgets/partner.php' );
+		require_once( __DIR__ . '/widgets/page_banner.php' );
     }
 
 	/**
@@ -68,9 +71,12 @@ class Plugin {
 		$this->include_widgets_files();
 
 		// Register Widgets
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\quick_box() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Quick_About() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Full_Slider() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Simple_sales_title() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Event() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Counter() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Partner_Clients() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Page_Banner() );
 	 
 	}
 

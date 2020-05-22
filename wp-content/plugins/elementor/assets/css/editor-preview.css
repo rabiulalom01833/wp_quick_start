@@ -1,4 +1,4 @@
-/*! elementor - v2.9.7 - 25-03-2020 */
+/*! elementor - v2.9.8 - 21-04-2020 */
 @charset "UTF-8";
 .elementor-control-unit-1 {
   width: 27px; }
@@ -1306,7 +1306,7 @@ a.elementor-responsive-switcher {
   display: block; }
 
 .elementor-control-type-slider--multiple {
-  margin-bottom: 14px; }
+  padding-bottom: 40px; }
   .elementor-control-type-slider--multiple .elementor-slider {
     margin-top: 12px;
     width: 98%; }
@@ -2246,6 +2246,9 @@ html.elementor-html {
 
 .elementor-edit-area-active .elementor-edit-hidden {
   display: none; }
+
+.elementor-section-wrap:empty {
+  min-height: 25px; }
 
 .elementor-element > .elementor-element-overlay {
   position: absolute;

@@ -1,4 +1,4 @@
-/*! elementor - v2.9.7 - 25-03-2020 */
+/*! elementor - v2.9.8 - 21-04-2020 */
 .dialog-widget-content {
   background-color: #fff;
   position: absolute;
@@ -1310,6 +1310,11 @@ ul.elementor-icon-list-items.elementor-inline-items {
     -webkit-border-radius: 6px;
             border-radius: 6px; }
 
+.elementor-button-align-center .elementor-field-type-submit button, .elementor-button-align-start .elementor-field-type-submit button, .elementor-button-align-end .elementor-field-type-submit button {
+  -webkit-flex-basis: initial;
+      -ms-flex-preferred-size: initial;
+          flex-basis: initial; }
+
 .elementor-button-align-center .elementor-field-type-submit {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1334,6 +1339,10 @@ ul.elementor-icon-list-items.elementor-inline-items {
           justify-content: flex-end; }
 
 @media screen and (max-width: 1024px) {
+  .elementor-tablet-button-align-center .elementor-field-type-submit button, .elementor-tablet-button-align-start .elementor-field-type-submit button, .elementor-tablet-button-align-end .elementor-field-type-submit button {
+    -webkit-flex-basis: initial;
+        -ms-flex-preferred-size: initial;
+            flex-basis: initial; }
   .elementor-tablet-button-align-center .elementor-field-type-submit {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1355,6 +1364,10 @@ ul.elementor-icon-list-items.elementor-inline-items {
             justify-content: flex-end; } }
 
 @media screen and (max-width: 767px) {
+  .elementor-mobile-button-align-center .elementor-field-type-submit button, .elementor-mobile-button-align-start .elementor-field-type-submit button, .elementor-mobile-button-align-end .elementor-field-type-submit button {
+    -webkit-flex-basis: initial;
+        -ms-flex-preferred-size: initial;
+            flex-basis: initial; }
   .elementor-mobile-button-align-center .elementor-field-type-submit {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

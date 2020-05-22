@@ -126,20 +126,7 @@ class Full_Slider extends Widget_Base {
 			]
         );
         
-        $repeater->add_control(
-			'title', [
-				'label' => __( 'Title', 'ic-elements' ),
-				'type' => Controls_Manager::TEXT,
-				'label_block' => true,
-			]
-		);
-		$repeater->add_control(
-			'subtitle', [
-				'label' => __( 'Sub Title', 'ic-elements' ),
-				'type' => Controls_Manager::TEXTAREA,
-				'placeholder' => __( 'Type your Sub Title here', 'ic-elements' ),
-			]
-		);
+        
         
 		$this->add_control(
 			'slider_repeat',
@@ -186,30 +173,15 @@ class Full_Slider extends Widget_Base {
         ?>
 
        <?php if ( $settings['slider_repeat'] ) :  
-           echo ' <div id="main_slider" class="owl-carousel owl-theme full-slides-shortcode">';
-           
-             foreach (  $settings['slider_repeat'] as $key=>$item ) : 
-            echo '<div class="item" style="background:url('.$item['image']['url'].');background-repeat:no-repeat;">'; 
-           
-                    echo '<div class="slider_table">';
-                        echo ' <div class="slider_table_Cell lefts">';
-                            echo ' <div class="container">';
-                                echo '<div class="row">';
-                                    echo ' <div class="col-xl-12 col-lg-12 col-md-12 col-12">  ';
-                                        echo ' <h2>'. $item['title'] . '</h2>';
-                                        echo ' <p>'. $item['subtitle'] . '</p>';
-                                        echo ' <a href="https://www.akij.net/our-companies/"><button class="btn-read">Our Companies</button></a>';
-                                    echo ' </div>';
-                                echo ' </div>';
-                            echo '  </div>';
-                     echo '</div>';
-                echo '</div>';
-          
-            echo ' </div>';
-           endforeach;     
-           
+            
+		   echo '<div class="hero-slider owl-carousel owl-theme">';
+				foreach (  $settings['slider_repeat'] as $key=>$item ) : 	
+					echo '<div class="hero-item">';
+					  echo '<img src="'.$item['image']['url'].'" alt="">';
+					echo '</div>';
+				endforeach;    
+			echo '</div>';
 
-           echo ' </div>';
         endif; ?>    
         <?php
 		

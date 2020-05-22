@@ -1,0 +1,141 @@
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h2 {
+        font-size: 26px;
+    }
+    .events-block-date ul li {
+        font-size: 30px; 
+    }
+    .btn-2 { 
+        padding: 10px 17px; 
+        font-size: 13px; 
+    }
+    .contact-button h6 { 
+        font-size: 12px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+   
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .clients-logo { 
+        column-count: 2;
+    }
+    .clients-logo li { 
+        height: 60px; 
+        margin: 5px 0 0;
+    }
+    .clients-logo li a img {
+        width: 100%; 
+    }
+    .stats-area {
+        padding: 60px 0 40px;
+    }
+    .instagram-img { 
+        column-count: 2;
+    }
+    .instagram-img li:nth-last-child(1){
+        display: none;
+    }
+    .email-box { 
+        margin-bottom: 20px;
+    }
+    .btn-2 { 
+        width: 100%; 
+        margin-top: 20px;
+        text-align: center;
+    }
+    .contact-button h6 { 
+        display: none;
+    }
+    .footer-area .footer-col:nth-child(1) {
+        order: 1;
+    }
+    .footer-right-widget {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footer-area {
+        padding: 40px 10px 0px;
+    }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    .events-block-date ul li {
+        font-size: 18px; 
+    }
+    .events-block-date ul li:nth-child(1) {
+        font-size: 12px; 
+    } 
+    .events-block-name h2 {
+        line-height: 18px; 
+    }
+    .events-block-name h2 {
+        line-height: 14px;
+        font-size: 14px;
+    }
+    .events-block-date ul { 
+        padding-right: 7px;
+        margin-right: 7px;
+    }
+    .events-block-name h6 {
+        padding-top: 5px; 
+        font-size: 10px;
+    }
+    .instagram-title a { 
+        padding: 10px 22px; 
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+    .events-img .btn-1 { 
+        display: none;
+    }
+    .top-logo img {
+        width: 100%;
+    }
+    .top-logo {
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .events-block-date ul { 
+        width: 66px;
+    }
+    .sample-sale-title ul li { 
+        font-size: 12px; 
+        padding: 3px 10px;
+    }
+    .header-menu {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 376px) {
+     
+}

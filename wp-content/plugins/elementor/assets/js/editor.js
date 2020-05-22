@@ -1,4 +1,4 @@
-/*! elementor - v2.9.7 - 25-03-2020 */
+/*! elementor - v2.9.8 - 21-04-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -15086,7 +15086,6 @@ function (_BaseRegion) {
       manager: (0, _assertThisInitialized2.default)(_this)
     }));
     _this.isDocked = false;
-    _this.opened = false;
     _this.indicators = {
       customPosition: {
         title: elementor.translate('custom_positioning'),
@@ -15176,12 +15175,6 @@ function (_BaseRegion) {
   }, {
     key: "open",
     value: function open(model) {
-      // If open once.
-      if (!this.opened) {
-        this.initLayout();
-        this.opened = true;
-      }
-
       this.$el.show();
 
       if (this.storage.docked) {
@@ -15210,6 +15203,10 @@ function (_BaseRegion) {
 
       if (!silent) {
         this.saveStorage('visible', false);
+      }
+
+      if (this.$el.resizable('instance')) {
+        this.$el.resizable('destroy');
       }
 
       elementorCommon.elements.$window.off('resize', this.ensurePosition);
@@ -15355,10 +15352,10 @@ function (_BaseRegion) {
     value: function onDocumentLoaded(document) {
       if (document.config.panel.has_elements) {
         this.initLayout();
-      }
 
-      if (this.storage.visible) {
-        $e.route('navigator');
+        if (this.storage.visible) {
+          $e.route('navigator');
+        }
       }
     }
   }, {

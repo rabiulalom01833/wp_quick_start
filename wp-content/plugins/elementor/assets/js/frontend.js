@@ -1,4 +1,4 @@
-/*! elementor - v2.9.7 - 25-03-2020 */
+/*! elementor - v2.9.8 - 21-04-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -9277,7 +9277,7 @@ module.exports = elementorModules.ViewModule.extend({
     }
   },
   isLightboxLink: function isLightboxLink(element) {
-    if ('A' === element.tagName && (element.hasAttribute('download') || !/^[^?]+\.(png|jpe?g|gif|svg)(\?.*)?$/i.test(element.href))) {
+    if ('A' === element.tagName && (element.hasAttribute('download') || !/^[^?]+\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i.test(element.href))) {
       return false;
     }
 
