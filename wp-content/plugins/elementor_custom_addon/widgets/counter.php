@@ -130,7 +130,16 @@ class Counter extends Widget_Base {
 			]
         );
       
-        
+        $repeater->add_control(
+			'box_size',
+			[
+				'label' => __( 'Box Size', 'text-domain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+			 
+				 
+			]
+        );
+      
         
         $this->add_control(
 			'counternamerepater',
@@ -143,6 +152,7 @@ class Counter extends Widget_Base {
 						'countername' => __( 'Event Title', 'ic-elements' ),
 						'counternumber' => __( 'Event Location 1', 'ic-elements' ),
 						'counter_icon' => __( 'Event Location 2', 'ic-elements' ),
+						'box_size' => __( 'Use boostarp column', 'ic-elements' ),
 					 
                     ],
            
@@ -185,7 +195,7 @@ class Counter extends Widget_Base {
              <?php if ($settings['counternamerepater']):
                 echo '<div class="row">';
                     foreach ($settings['counternamerepater'] as $key => $item):
-                    echo '<div class="col-lg-3 col-6">';
+                    echo '<div class="'. $item['box_size'] . '">';
                         echo '<div class="stats-item">';
                         \Elementor\Icons_Manager::render_icon ( $item['counter_icon'], [ 'aria-hidden' => 'true' ] );
                             echo '<h2 class="counter">' . $item['countername'] . '</h2>';

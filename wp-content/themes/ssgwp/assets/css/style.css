@@ -21,12 +21,13 @@ Css Style
 */
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Open Sans;
+    color: #000;
 }
  
 
 h1, h2, h3, h4, h5, ul, li, a{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Open Sans;
     margin: 0;
     padding: 0;
 }
@@ -37,38 +38,57 @@ button, a{
 
 ul{
     list-style: none;
+    font-family: Open Sans;
 }
 
 h1{
     font-size: 36px;
+    font-family: Open Sans;
 }
 
 h2{
     font-size: 30px;
+    font-family: Open Sans;
 }
 
 h3{
     font-size: 26px;
+    font-family: Open Sans;
+    
 }
 
 h4{
     font-size: 20px;
+    font-family: Open Sans;
 }
 
 h5{
     font-size: 18px;
+    font-family: Open Sans;
 }
 
 h6{
     font-size: 14px;
+    font-family: Open Sans;
+    color: #000;
 }
 
 p{
     font-size: 12px;
+    font-family: Open Sans;
+    color: #000;
 }
 
+.bp{
+    padding: 80px 0;
+}
+.pt{
+    padding-top: 40px;
+}
 
-
+.pb{
+    padding-top: 40px;
+}
 
 
 /*
@@ -82,6 +102,9 @@ p{
 }
 .top-logo{
     text-align: center;
+}
+.top-logo img {
+    width: 130px;
 }
 .top-nav {
     margin-top: 20px;
@@ -103,7 +126,7 @@ p{
     font-weight: 600;
 }
 
-.top-nav li a.active {
+.top-nav li.current-menu-item a {
     color: #000 !important;
     border-bottom: 2px solid #000;
 }
@@ -112,9 +135,7 @@ p{
     display: none;
 }
 
-
-
-
+ 
 .nav-button {
     position: absolute;
     right: 8%;
@@ -254,6 +275,13 @@ p{
     background: #fff;
 }
 
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+
 /*
 ========================================
    Sample Sale
@@ -318,7 +346,7 @@ p{
 }
 .events-block-date{}
 .events-block-date ul {
-    border-right: 2px solid #ccc;
+    border-right: 1px solid #ccc;
     padding-right: 13px;
     margin-right: 13px;
 }
@@ -363,6 +391,12 @@ p{
 .stats-item i {
     font-size: 40px;
 }
+
+.stats-item svg {
+    width: 40px;
+    height: 40px;
+}
+
 .stats-item h2 {
     padding: 21px 0 8px;
     font-weight: 600;
@@ -400,30 +434,21 @@ p{
     text-align: center;
     padding-bottom: 40px;
 }
-.clients-logo{
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+.clients-logo {
+    margin-top: 40px;
 }
 .clients-logo li {
     display: inline-block;
-     height: 100px;
     position: relative;
     text-align: center;
     margin: 10px 0 0;
+    width: 20%;
+    height: auto;
 }
-.clients-logo li a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); 
-}
+ 
 .clients-logo li a img {
     width: auto;
-    height: auto;
-    
+    height: auto; 
 }
  
 
@@ -647,6 +672,7 @@ p{
 .our-approach-content h5{
     text-transform: uppercase;
     text-align: center;
+    color: #000;
 }
 .our-approach-content h6 {
     padding: 30px 0px 15px;
@@ -680,6 +706,7 @@ p{
 .inventory-solutions-title h5 {
     text-transform: uppercase;
     padding-bottom: 26px;
+    color: #000;
 }
 .inventory-solutions-title p {}
 
@@ -705,7 +732,9 @@ p{
     padding-bottom: 25px;
     text-align: center;
 }
-.inventory-solutions-text p{}
+.inventory-solutions-text h5{
+    color: #000;
+}
 
 /* Stats */
 .stats-area {
@@ -717,6 +746,7 @@ p{
 .stats-title h5 {
     text-transform: uppercase;
     text-align: center;
+    color: #000;
 }
 .stats-item { 
     margin-top: 50px;
@@ -882,6 +912,7 @@ ul.clients-business-logo li {
     padding-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
+    color: #000;
 }
 .story-content p {}
 
@@ -1136,4 +1167,18 @@ ul.clients-business-logo li {
 }
 .entry-content p {
     padding-bottom: 10px;
+}
+
+
+
+.elementor-element-12ab580 {
+    padding: 0;
+    border-right: 2px solid #fff;
+}
+.elementor-element-b565623{
+    border-right: 2px solid #fff;
+}
+
+ul.clients-logo li img {
+    height: 170px;
 }

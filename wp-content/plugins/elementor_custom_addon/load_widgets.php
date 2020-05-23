@@ -56,6 +56,9 @@ class Plugin {
 		require_once( __DIR__ . '/widgets/counter.php' );
 		require_once( __DIR__ . '/widgets/partner.php' );
 		require_once( __DIR__ . '/widgets/page_banner.php' );
+		require_once( __DIR__ . '/widgets/contact-us.php' );
+		require_once( __DIR__ . '/widgets/choose-us.php' );
+		require_once( __DIR__ . '/widgets/client-testimonial.php' );
     }
 
 	/**
@@ -77,6 +80,9 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Counter() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Partner_Clients() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Page_Banner() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contact_Us() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Choose_Us() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\client_testimonial() );
 	 
 	}
 

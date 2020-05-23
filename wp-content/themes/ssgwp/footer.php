@@ -49,7 +49,7 @@ $copy_right_text = get_theme_mod( 'copy_right');
                     <div class="col-lg-4">
                         <div class="contact-button">
                             <a href="#" class="btn-2">JOIN MEMBER LIST</a>
-                            <h6>321 444 MEMBERS</h6>
+                            <h6> <?php echo do_shortcode('[user_count]')?> MEMBERS</h6>
                         </div>
                     </div>
                 </div>

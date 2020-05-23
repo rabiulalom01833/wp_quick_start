@@ -8,10 +8,7 @@
     */ 
     $('.nav-button').on('click', function () {
         $('.header-menu').toggleClass('active');
-    }); 
-    $('.nav-close').on('click', function () {
-        $('.header-menu').removeClass('active');
-    }); 
+    });  
 
     /*
     ========================================
@@ -40,18 +37,50 @@
         });
     }
 
+    /*
+    ========================================
+    Logo Footer
+    ========================================
+    */
+    if ($('.clients-testimonials-slider').length) {
+        $('.clients-testimonials-slider').owlCarousel({
+            loop: true,
+            dots: false,
+            margin: 50,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            nav: true,
+            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    dots: true,
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    }
+
 
     /*
     ========================================
     Counter
     ========================================
     */
-    if ($('.counter').length) {
-        $('.counter').countUp({
-            'time': 4000,
-            'delay': 10
-        });
-    }
+    // if ($('.counter').length) {
+    //     $('.counter').countUp({
+    //         'time': 4000,
+    //         'delay': 10
+    //     });
+    // }
 
 
 
