@@ -1182,3 +1182,68 @@ ul.clients-business-logo li {
 ul.clients-logo li img {
     height: 170px;
 }
+
+
+.checkbox-wrapper { 
+    width: 12%;
+    display: inline-flex;
+}
+
+.email-box {
+    width: 30%;
+}
+
+.select-city {
+    width: 20%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    background-size: 15px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.footer-form{
+    display: inline;
+} 
+
+.members {
+    display: inline-block;
+    font-weight: 600;
+    text-align: right;
+    margin-left: 20px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .email-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .select-city {
+        width: 64%;
+    }
+    .checkbox-wrapper {
+        width: 100px;
+    }
+    .members {
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+    .member-list {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .form-area {
+        background-color: #dcdcdc;
+        padding: 20px;
+    }
+}
+
+span.password-input-group {
+    display: none !important;
+}

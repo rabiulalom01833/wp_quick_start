@@ -75,9 +75,11 @@
         border-bottom: 1px solid #ccc;
     }
     .footer-right-widget h6 {
-        line-height: 10px;
-        padding-top: 0;
+        padding-top: 5px;
+        line-height: 18px;
     }
+
+
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -88,13 +90,14 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     h2 {
         font-size: 18px;
     }
     h6 {
-        font-size: 12px;
+        font-size: 9px;
+        line-height: 20px;
     }
     .events-block-date ul li {
         font-size: 18px; 
@@ -126,7 +129,7 @@
         display: none;
     }
     .top-logo img {
-        width: 100%;
+        width: 90px;
     }
     .top-logo {
         text-align: center;
@@ -137,8 +140,8 @@
         width: 66px;
     }
     .sample-sale-title ul li {
-        font-size: 12px;
-        padding: 2px 5px;
+        font-size: 8px;
+        padding: 2px 15px;
     }
     .header-menu {
         padding: 25px 0;
@@ -176,6 +179,101 @@
         position: relative;
         right: 10px;
     }
+    .entry-content h2 {
+        font-size: 16px; 
+    }
+    .stats-item svg {
+        width: 25px;
+        height: 25px;
+    }
+    ul.clients-logo li img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer-left-widget p {
+        font-weight: 700;
+        padding-top: 25px;
+        font-size: 9px;
+    }
+
+    .footer-left-widget ul li a {
+        font-size: 11px; 
+    }
+    .footer-right-widget h6 {
+        font-size: 12px;
+    }
+    .clients-logo li {
+        width: 120px;
+        height: 90px !important;
+    }
+    .clients-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .stats-item {
+        margin-top: 30px;
+    }
+    .form-area {
+        background-color: #dcdcdc;
+        padding: 10px 10px 5px 10px;
+    }
+    .members {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .email-box {
+        margin-bottom: 10px;
+    }
+
+    .btn-2 { 
+        margin-top: 12px; 
+    }
+    .business-hero {
+        padding: 125px 0px; 
+    }
+    .our-approach-area {
+        padding: 20px 0;
+    }
+
+    .inventory-solutions-area { 
+        padding-top: 40px;
+    }
+
+    .our-approach-content ul {
+        width: 90%;
+        column-count: unset;
+    }
+
+    .inventory-solutions-text {
+        padding: 20px;
+    }
+
+    .reasons-brands-content {
+        column-count: unset;
+        column-gap: unset;
+        padding: 20px;
+    }
+    .reasons-brands-text::before {
+        position: unset; 
+    }
+
+    .reasons-brands-number {
+        font-size: 20px;
+        width: 30px;
+        color: #a3a3a3;
+    }   
+
+    .reasons-brands-text {
+        font-size: 11px; 
+    }
+
+    .reasons-brands-area { 
+        padding: 40px 0;
+    }
+
+
+
 
 }
 

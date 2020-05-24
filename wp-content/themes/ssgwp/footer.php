@@ -18,15 +18,13 @@ $copy_right_text = get_theme_mod( 'copy_right');
 
 
 ?>
-<div class="form-area">
+	<div class="form-area">
         <div class="container"> 
-            <form action="/">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <input type="email" name="email" class="email-box" placeholder="ENTER EMAIL">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="check-select"> 
+            <div class="row">
+                <div class="col-lg-12"> 
+                    <div class="widget-footer-form">
+                        <form action="/" class="footer-form"> 
+                            <input type="email" name="email" class="email-box" placeholder="ENTER EMAIL"> 
                             <select class="select-city">
                                 <option>SELECT CITY</option>
                                 <option>SELECT CITY</option>
@@ -44,19 +42,17 @@ $copy_right_text = get_theme_mod( 'copy_right');
                                     <label for="c2"><i class="fa fa-female"></i></label>
                                 </div>
                             </div>
-                        </div>
+                            <a href="#" class="btn-2 member-list">JOIN MEMBER LIST</a> 
+                        </form> 
+                        <div class="members">    <?php echo do_shortcode('[user_count]')?> MEMBERS</div> 
                     </div>
-                    <div class="col-lg-4">
-                        <div class="contact-button">
-                            <a href="#" class="btn-2">JOIN MEMBER LIST</a>
-                            <h6> <?php echo do_shortcode('[user_count]')?> MEMBERS</h6>
-                        </div>
-                    </div>
+                    
                 </div>
-            </form>
+            </div>
         </div>
     </div>
- 
+
+   
     <footer class="footer-area">
         <div class="container-fluid">
             <div class="row">

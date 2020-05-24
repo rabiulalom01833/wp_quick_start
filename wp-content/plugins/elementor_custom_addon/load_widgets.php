@@ -59,6 +59,7 @@ class Plugin {
 		require_once( __DIR__ . '/widgets/contact-us.php' );
 		require_once( __DIR__ . '/widgets/choose-us.php' );
 		require_once( __DIR__ . '/widgets/client-testimonial.php' );
+		require_once( __DIR__ . '/widgets/event-list.php' );
     }
 
 	/**
@@ -83,6 +84,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contact_Us() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Choose_Us() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\client_testimonial() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Event_List() );
 	 
 	}
 

@@ -154,6 +154,10 @@ function wpb_user_count() {
 	add_shortcode('user_count', 'wpb_user_count');
 
 
+
+
+
+	
 /**
  * Implement the Custom Header feature.
  */
