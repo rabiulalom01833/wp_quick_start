@@ -1247,3 +1247,10 @@ ul.clients-logo li img {
 span.password-input-group {
     display: none !important;
 }
+
+.businessclient .clients-logo li img {
+    height: auto;
+}
+.businessclient .clients-logo li {
+    width: 12.5%;
+}
