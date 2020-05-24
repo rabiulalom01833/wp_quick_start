@@ -273,7 +273,18 @@
     }
 
 
+    .elementor-element-1cd5192 .clients-logo li {
+        width: 85px;
+        height: auto !important;
+    }
+    .elementor-element-1cd5192 ul.clients-logo li img {
+        width: 85px;
+        height: 85px;
+    }
 
+    .elementor-element-1cd5192 .clients-logo {
+        margin-top: 0;
+    }
 
 }
 
